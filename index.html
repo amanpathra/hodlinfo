@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hodlinfo</title>
+</head>
+<body>
+    <nav>
+        <div class="brand">
+            <a href="/">
+                <img src="images/HODLINFO.8f78fc06.png" alt="HODLINFO">
+            </a>
+        </div>
+        <div class="btn-grp">
+            <div class="quote">
+                <select name="INR" id="inr" class="inr">
+                    <option value="INR">INR</option>
+                </select>
+            </div>
+            <div class="base">
+                <select name="BTC" id="btc" class="btc">
+                    <option value="BTC">BTC</option>
+                    <option value="ETH">ETH</option>
+                    <option value="USDT">USDT</option>
+                    <option value="XRP">XRP</option>
+                    <option value="TRX">TRX</option>
+                    <option value="DASH">DASH</option>
+                    <option value="ZEC">ZEC</option>
+                    <option value="XEM">XEM</option>
+                    <option value="IOST">IOST</option>
+                    <option value="WIN">WIN</option>
+                    <option value="BTT">BTT</option>
+                    <option value="WRX">WRX</option>
+                </select>
+            </div>
+            <div class="referal">
+                <button>BUY BTC</button>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="counter">
+                <div class="circular-progress" data-inner-circle-color="#191d28" data-percentage="60" data-progress-color="#3dc6c1" data-bg-color="black">
+                    <div class="inner-circle"></div>
+                    <p class="percentage">59</p>
+                </div>
+            </div>
+
+            <div class="telegram">
+                <button>
+                    <a href="">
+                        <img src="images/telegram.png" alt="">
+                        <span>Connect Telegram</span>
+                    </a>
+                </button>
+            </div>
+
+            <div class="theme" id="theme">
+                <div class="on">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Last</th>
+                    <th>Buy/Sell Price</th>
+                    <th>Volume</th>
+                    <th>Base Unit</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- TICKER DATA WILL APPEAR HERE -->
+            </tbody>
+        </table>
+
+        <hr/>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <span>Copyright &copy; 2024</span>
+        </div>
+        <div class="brand">
+            <a href="/">Hodlinfo.com</a>
+        </div>
+        <div class="support">
+            <a href="mailto:amanpathra@gmail.com">Support</a>
+        </div>
+    </footer>
+    
+    <div class="fspace"></div>
+
+    <div class="homescreen">
+        <button>
+            Add HODLINFO to home screen
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

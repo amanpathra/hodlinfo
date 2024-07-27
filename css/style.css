@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+:root {
+    --bgco1: #191d28;
+    --bgco2: #2c3344;
+    --maco1: white;
+    --maco2: #3dc6c1;
+    --progress-bar-width: 2.5rem;
+    --progress-bar-height: 2.5rem;
+    --progress-bar-font-size: 1rem;
+}
+
+body {
+    background-color: var(--bgco1);
+    color: var(--maco1);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+nav .brand img {
+    height: 45px;
+}
+
+nav .btn-grp {
+    display: flex;
+    gap: 1rem;
+}
+
+nav .btn-grp > div > * {
+    padding: 6px 14px;
+    border-radius: 8px;
+    background-color: var(--bgco2);
+    color: var(--maco1);
+    border: none;
+    font-family: "Oswald", sans-serif;
+    font-size: medium;
+    font-weight: 500;
+}
+
+nav .btn-grp > div > select option {
+    border: none;
+}
+
+nav .right-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+nav .right-content .counter {
+    display: flex;
+    align-items: center;
+}
+
+nav .right-content .telegram {
+    display: flex;
+    align-items: center;
+}
+
+nav .right-content .telegram button {
+    padding: 8px 16px;
+    background-color: var(--maco2);
+    border: none;
+    border-radius: 10px;
+}
+
+nav .right-content .telegram button * {
+    margin: 0 4px;
+}
+
+nav .right-content .telegram a {
+    text-decoration: none;
+}
+
+nav .right-content .telegram button span {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    color: var(--maco1);
+    font-size: medium;
+}
+
+nav .right-content .telegram img {
+    height: 1rem;
+}
+
+nav .right-content .theme {
+    display: flex;
+    align-items: center;
+}
+
+nav .right-content .theme > div {
+    height: 2.5rem;
+    width: 4rem;
+    background-color: var(--bgco2);
+    border-radius: 99px;
+    display: flex;
+    align-items: center;
+    padding: 0 0.25rem;
+}
+
+nav .right-content .theme > div > div {
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--maco2);
+    border-radius: 50%;
+    margin-left: 0;
+    transition: all linear 0.15s;
+}
+
+main table {
+    width: 90%;
+    margin: auto;
+    border: none;
+    border-spacing: 0 10px;
+}
+
+main table tr {
+    height: 4rem;
+    margin: 10px;
+}
+
+main table thead {
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+main table tbody tr {
+    background-color: var(--bgco2);
+    font-size: larger;
+}
+
+main table tbody tr td {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    padding: 10px;
+}
+
+footer > div,
+footer > div > a {
+    color: gray;
+    text-decoration: none;
+}
+
+.homescreen {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    justify-content: center;
+    background-color: var(--bgco1);
+}
+
+.homescreen button {
+    padding: 10px 15px;
+    border: 1px solid var(--maco2);
+    border-radius: 8px;
+    background-color: transparent;
+    color: var(--maco2);
+    font-size: medium;
+}
+
+.fspace {
+    height: 3rem;
+}
+
+#theme > div.on > div {
+    margin-left: calc(100% - 2rem);
+}
+
+.circular-progress {
+    width: var(--progress-bar-width);
+    height: var(--progress-bar-height);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-circle {
+    position: absolute;
+    width: calc(var(--progress-bar-width) - 8px);
+    height: calc(var(--progress-bar-height) - 8px);
+    border-radius: 50%;
+    background-color: var(--bgco1);
+}
+
+.percentage {
+    position: relative;
+    font-size: var(--progress-bar-font-size);
+}
+
+@media (max-width: 768px) {
+    nav{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    main table{
+        width: 200%;
+    }
+}
